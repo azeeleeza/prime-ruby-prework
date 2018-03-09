@@ -5,7 +5,7 @@ def prime?(n)
   else
     factors = 2...n
     factors.each do |factor|
-      break if factor * factor > n
+    #  break if factor * factor > n
       n%factor==0 ? bool = false : bool
       break if bool == false
     end
